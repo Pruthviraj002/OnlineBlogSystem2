@@ -8,8 +8,9 @@ import About from './pages/About'
 import Dashboard from './pages/Dashboard'
 import Signin from './pages/Signin'
 import Signup from './pages/Signup'
-import Project from './pages/Project'
+// import Project from './pages/Project'
 import Header from './components/Header'
+import Contact from './pages/Contact'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,10 +22,11 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
           <Route path='/dashboard' element={<Dashboard />} />
           <Route path='/sign-in' element={<Signin />} />
           <Route path='/sign-up' element={<Signup />} />
-          <Route path='/project' element={<Project />} />
+          {/* <Route path='/project' element={<Project />} /> */}
         </Routes>
       </BrowserRouter >
     </>

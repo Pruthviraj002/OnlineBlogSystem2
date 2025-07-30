@@ -25,7 +25,7 @@ function Header() {
                     <FaMoon />
                 </Button>
                 <Link to='/sign-in'>
-                    <Button className='bg-gradient-to-r from-purple-500 to-blue-500'>Signin</Button>
+                    <Button className='bg-gradient-to-r from-purple-500 to-blue-500' outline>Signin</Button>
                 </Link>
                 <NavbarToggle />
             </div>
@@ -39,12 +39,11 @@ function Header() {
                     <Link to='/about'>About</Link>
                 </NavbarLink>
 
-                <NavbarLink active={path === '/projects'} as={"div"}>
-                    <Link to='/projects'>Project</Link>
+                <NavbarLink active={path === '/contact'} as={"div"}>
+                    <Link to='/contact'>contact</Link>
                 </NavbarLink>
             </NavbarCollapse>
-
-        </Navbar >
+        </Navbar>
 
     )
 }
